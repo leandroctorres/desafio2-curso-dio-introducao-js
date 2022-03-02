@@ -1,0 +1,55 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(166, 161, 235);
+}
+
+
+button{
+	border-radius: 20px;
+	font-size: 12pt;
+	text-align: center;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+
+input[type=checkbox]:checked ~ .text{
+	text-decoration: line-through;
+}
+#items{
+	border: solid 1px black;
+	height: 400px;
+	width: 400px;
+	background-color: rgb(190, 236, 248);
+
+
+}
+
+#items{
+	max-width: 500;
+}
+input[type='checkbox']:checked::after{
+  /*content: 'xxxxxxxxxxxxxxxxxxxxxxxxx';
+  border-color: #bf360c;
+	text-decoration: line-through;
+	*/
+	/*pseudo-elemento*/
+	padding-right: 20px;
+	border-color: #bf360c;
+	color: #CCC;
+	content: "___________________________________Ok!";
+	height: 800px;
+	width: 5px;
+	margin-right: 5px;
+	background-color: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+	position: relative;
+	text-decoration: line-through;
+}
